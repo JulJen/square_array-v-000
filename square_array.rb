@@ -7,10 +7,9 @@ def square_array(array)
 end
 
 
-# def square_array(array)
-#   new_array = Array.new  #creating an empty array using a class constructor
-#   array.each do |squared| #each is called on collection of array and passed through block of squared
-#   new_array << squared ** 2 #block is
-#   end
-#   new_array
-# end
+def square_array(array)
+  new_array = Array.new  #creating an empty array using a class constructor
+  array.collect {|squared|squared **2} #each is called on collection of 
+  end
+  new_array
+end
