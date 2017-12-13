@@ -10,6 +10,4 @@
 def square_array(array)
   new_array = Array.new  #creating an empty array using a class constructor
   array.collect {|squared|squared **2} #each is called on collection of
-  end
-  new_array
 end
