@@ -1,10 +1,10 @@
 def square_array(array)
   new_array = []
   array.each do |squared|
-  new_array << squared ** 2
-
+    new_array << squared ** 2
+    puts new_array
+  end
 end
-  new_array
 
 
 # describe '#square_array' do
