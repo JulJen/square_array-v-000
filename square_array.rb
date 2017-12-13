@@ -1,3 +1,5 @@
+require 'pry'
+
 def square_array(array)
   new_array = Array.new  #creating an empty array using a class constructor
   array.each do |squared| #each is called on collection of array and passed through block of squared
