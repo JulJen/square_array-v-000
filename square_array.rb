@@ -1,31 +1,16 @@
 def square_array(array)
   new_array = Array.new  #creating an empty array using a class constructor
-  array.each do |squared|
-  new_array << squared ** 2 #each is called on collection of array and 
+  array.each do |squared| #each is called on collection of array and passed through block of squared
+  new_array << squared ** 2 #block to the exponent of 2 is added to the end of a new array
   end
   new_array
 end
 
 
-# describe '#square_array' do
-#
-#   it 'does not call on collect/map or inject' do
-#     numbers = [1,2,3]
-#     expect(numbers).to_not receive(:collect)
-#     expect(numbers).to_not receive(:map)
-#     expect(numbers).to_not receive(:inject)
-#     square_array(numbers)
-#   end
-#
-#   it 'calls on each' do
-#     numbers = [1,2,3]
-#     expect(numbers).to receive(:each)
-#     square_array(numbers)
-#   end
-#
-#   it 'should square the elements in an array' do
-#     expect(square_array([1,2,3])).to eq([1,4,9])
-#     expect(square_array([9,10,16,25])).to eq([81,100,256,625])
-#   end
-#
-# end
+def square_array(array)
+  new_array = Array.new  #creating an empty array using a class constructor
+  array.each do |squared| #each is called on collection of array and passed through block of squared
+  new_array << squared ** 2 #block is
+  end
+  new_array
+end
